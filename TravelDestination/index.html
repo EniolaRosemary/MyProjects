@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMPASS HOMEPAGE</title>
+  <link rel="icon" href="img/newlogo.ico" type="img/logo.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sticky-header">
+    <nav class="navbar">
+        <div class="logo">
+        <img src="img/newlogo.png" alt="COMPASS LOGO" height="50px" class="logo-img">
+        <h1 style="font-size: 20px; color: #ed6a19;"> COMPASS</h1>
+        </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Destinations ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="tanzania.html">Tanzania</a></li>
+            <li><a href="kenya.html">Kenya</a></li>
+            <li><a href="nigeria.html">Nigeria</a></li>
+          </ul>
+        </li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="video-header">
+    <video autoplay muted loop playsinline>
+      <source src="video/Headervid.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+      <h1 class="video-text" style="font-size: 80px;"><b>DREAM</b> <b style="color: #ed6a19;">DESTINATIONS</b></h1>
+      <p style="font-size: 22px;">Let <b style="color: #ed6a19;">  COMPASS </b> Be Your Guide.</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- Introduction and About Section -->
+  <section>
+      <div class="intro">
+      <h1>Welcome to COMPASS</h1><hr style="background-color: #ed6a19; height: 5px; width: 255px;">
+      <p style="padding-top: 25px;">At <b>COMPASS</b>, we believe that every journey tells a story, and every destination holds a dream. 
+      We’re not just a travel brand, <em>we’re your global guide</em>, helping you navigate the beauty, diversity, 
+        and wonder of the world’s most inspiring places.</p>
+      <p>
+        We’re travelers, just like you; curious, adventurous, and passionate about seeing the world differently. 
+        That’s why we created <b>COMPASS</b>: to help people experience Africa in its truest, most beautiful form. 
+        No tourist traps. No cookie-cutter packages. Just real places, rich cultures, and unforgettable adventures.
+        We’ll guide you to hidden beaches, vibrant cities, local markets, and breathtaking landscapes — 
+        all while making sure you feel at home every step of the way.<br>
+
+      Let <b>COMPASS</b> be your guide to the heart of Africa.
+      </p>  
+    </div>
+  </section>
+
+    <section class="destination-cards">
+      <div class="card">
+        <img src="img/WhatsApp Image 2025-05-17 at 01.05.30 (1).jpeg" alt="Riu Janbo Hotel">
+        <h3>Riu Janbo Hotel</h3>
+        <h3>Zanzibar, Tanzania</h3>
+        <p>Wake up to the rhythm of the Ocean at Riu Jambo. Where paradise meets luxury.</p>
+        <a href="tanzania.html" style="background-color: rgb(0, 132, 132);">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="img/WhatsApp Image 2025-05-18 at 13.19.34.jpeg" alt="Safari Photo">
+        <h3>Maasai Mara National Reserve</h3>
+        <h3>Narok County, Kenya</h3>
+        <p>Witness the wild in its purest form. The Maasai Mara awaits your safari adventure.</p>
+        <a href="kenya.html">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="img/WhatsApp Image 2025-05-18 at 13.19.33.jpeg" alt="Obudu Resort">
+        <h3>Obudu Mountain Resort</h3>
+        <h3>Cross River, Nigeria</h3>
+        <p>Breathe in the clouds, escape to Obudu. Nature’s hidden sanctuary above the hills.</p>
+        <a href="nigeria.html" style="background-color: rgb(11, 145, 11);">Learn more</a>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+  <section class="testimonials">
+      <h2>What Our Travelers Say</h2><hr style="background-color: #ed6a19; height: 5px; width: 260px;">
+      <div class="testimonials-container">
+      <div class="testimonial" >
+        <img src="img/WhatsApp Image 2025-05-18 at 15.26.47.jpeg" alt="Nini R.">
+        <blockquote>
+          "COMPASS made my honeymoon unforgettable. I loved the experience!"
+        </blockquote>
+        <p class="author">– Nini R.</p>
+      </div>
+      <div class="testimonial">
+        <img src="img/WhatsApp Image 2025-05-18 at 15.29.15.jpeg" alt="Bami D.">
+        <blockquote>
+          "I never thought travel could be this easy and exciting. Truly world-class service!"
+        </blockquote>
+        <p class="author">– Bami D.</p>
+      </div>
+      <div class="testimonial">
+        <img src="img/WhatsApp Image 2025-05-18 at 15.26.53.jpeg" alt="Sam T.">
+        <blockquote>
+          "A perfect blend of luxury and adventure. I’ve recommended COMPASS to all my friends!"
+        </blockquote>
+        <p class="author">– Sam T.</p>
+      </div>
+      </div>
+    </section>
+
+    <section class="booking-form">
+    <h1 style="padding-bottom: 25px;">Plan Your Next Trip</h1>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="destination">Select Destination:</label>
+      <select id="destination" name="destination" required>
+        <option value="">-- Choose --</option>
+        <option value="paris">Tanzania</option>
+        <option value="bali">Kenya</option>
+        <option value="kyoto">Nigeria</option>
+      </select>
+
+      <label for="date">Travel Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- Travel Tips -->
+  <section class="travel-tips">
+  <div class="tips-box">
+    <h1>Travel Tips</h1><hr style="background-color: #ed6a19; height: 5px; width: 120px;">
+    <ul>
+      <li>Pack light, but don't forget essentials like adapters and travel documents.</li>
+      <li>Always have digital and physical copies of your ID and reservations.</li>
+      <li>Learn a few local phrases—it goes a long way!</li>
+      <li>Respect local customs and dress codes, especially in temples or sacred places.</li>
+      <li>Buy travel insurance for peace of mind.</li>
+    </ul>
+  </div>    
+  </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 COMPASS Dream Destinations. All rights reserved.</p>
+  </footer>
+</body>
+</html>

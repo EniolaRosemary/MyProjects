@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header" id="home">
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#about"><i class="fas fa-user icons"></i> About</a></li>
+      <li><a href="#grades"><i class="fas fa-table icons"></i> Grades</a></li>
+      <li><a href="#skills"><i class="fas fa-star icons"></i> Skills</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope icons"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="text-shadow">Eniola Rosemary</h1>
+      <p class="tagline">Art | Beauty | Code</p>
+    </div>
+
+    <div class="image-flex">
+      <div class="img-block"><img src="img/Snapchat-879238559.jpg" alt="My Photo" /></div>
+      <div class="separator"></div>
+      <div class="img-block"><img src="img/Snapchat-797368559.jpg" alt="Eniola Rosemary" /></div>
+      <div class="separator"></div>
+      <div class="img-block"><img src="img/Snapchat-828893571.jpg" alt="Eni Rose" /></div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- About Me -->
+  <section class="about-section" id="about">
+    <h2>&lt;/ABOUT ME&gt;</h2>
+    <p class="paragraph">Hello! My name is Eniola, but most people know me as Nyola. 
+        I’m the fourth of five children in my family, and I was born in the vibrant 
+        city of Benin. I spent my early years in Ogun State, Nigeria, where I completed both 
+        my primary and secondary education. Currently, I’m a third-year student at the University of Jos, 
+        pursuing my academic and professional journey with a growing passion for technology. 
+        I’m also interning at 5AM Technologies, where I’m expanding my skills as a Full Stack Web Developer. 
+    </p>
+    <p class="paragraph">I have a keen interest in the tech industry, particularly in web development and data analysis.
+    As I grow in the tech space, I hope to connect with like-minded individuals by attending tech events, meetups, 
+    and conferences to expand my network and learn from others in my niche. Beyond coding, I have a passion 
+    for design and love creating visually engaging projects. Music is another constant in my life, it keeps me focused and inspired. 
+    I'm also deeply drawn to nature; it’s where I feel most grounded and where many of my creative ideas are born.</p>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.823124478512!2d8.888523175087277!3d9.948669973915722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1053727ab2c759d7%3A0x3dc38fbbe8db78a!2sXV2R%2BC7P%2C%20Jos%20930105%2C%20Plateau!5e0!3m2!1sen!2sng!4v1748703267569!5m2!1sen!2sng" 
+     width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- Grades -->
+  <section class="grades-section" id="grades">
+    <h2>&lt;/GRADES&gt;</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Courses</th>
+          <th>100 Level</th>
+          <th>200 Level</th>
+          <th>300 Level</th>
+          <th>Level Coordinator</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mathematics</td>
+          <td>78%</td>
+          <td>90%</td>
+          <td>Loading</td>
+          <td>Mr. Johnson</td>
+          <td>Excellent progress</td>
+        </tr>
+   
+         <tr>
+          <td>Computer Science</td>
+          <td>89%</td>
+          <td>92%</td>
+          <td>Loading</td>
+          <td>Mr. Okoye</td>
+          <td>Very Attentive</td>
+        </tr>
+
+         <tr>
+          <td>Physics</td>
+          <td>50%</td>
+          <td>63%</td>
+          <td>-</td>
+          <td>Mr. Newton</td>
+          <td>Relentless!</td>
+        </tr>
+      </tbody>
+      <tfoot>
+       <tr>
+          <td colspan="12">Keep up the great work!</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills-section" id="skills">
+    <h2>&lt;/SKILLS&gt;</h2>
+    <ol>
+      <li>Graphics Design</li>
+      <li>Web Development</li>
+      <li>Project Management</li>
+      <li>Art and Beauty</li>
+      <li>Effective Communication and Leadership</li>
+    </ol>
+
+    <h4>Technical Skills</h4>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Figma</li>
+      <li>React</li>
+      <li>Canva</li>
+    </ul>
+
+    <h4>Extracurricular Activities</h4>
+    <ul>
+      <li>Cycling</li>
+      <li>Lawn Tennis</li>
+      <li>Ludo</li>
+      <li>Volunteering</li>
+    </ul>
+  </section>
+
+  <!-- Form -->
+  <section class="contact-section" id="contact">
+    <h2>&lt;/CONTACT ME&gt;</h2>
+    <form method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" required placeholder="Enter your name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="example@email.com" />
+
+      <label for="subject">Subject</label>
+      <select id="subject" required>
+        <option value="" class="dropdown">Select One</option>
+        <option value="general" class="dropdown">General</option>
+        <option value="academic" class="dropdown">Academic</option>
+        <option value="collaboration" class="dropdown">Project Collaboration</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" required placeholder="Write your message..."></textarea>
+
+      <div class="form-buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nyola. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

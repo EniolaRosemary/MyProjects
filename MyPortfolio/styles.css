@@ -1,0 +1,290 @@
+/* Universal*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  flex: 1;
+  text-align: left;
+}
+
+.image-flex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.img-block img {
+  width: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  border-top: 2px solid rgb(245, 87, 245);
+  border-bottom: 2px solid rgb(245, 87, 245);
+}
+
+.separator {
+  height: 170px;
+  width: 2px;
+  background-color: rgb(245, 87, 245);
+}
+
+.main-header {
+  text-align: center;
+  padding: 48px 16px;
+  background: rgb(28, 28, 28);
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  outline: 2px solid rgb(245, 87, 245);
+  outline-offset: 4px;
+  padding: 5px;
+}
+
+.icons{
+  color: rgb(245, 87, 245);
+}
+
+
+.tagline {
+  font-style: italic;
+  letter-spacing: 2px;
+  color: rgb(245, 87, 245);
+  padding: 5px;
+  width: 240px;
+}
+
+/* Sections */
+section {
+  margin: 48px 0;
+  padding: 32px;
+  background: rgb(28, 28, 28);
+  border-left: 5px solid rgb(245, 87, 245);
+  border-radius: 10px;
+  animation: fadeInUp 0.7s ease;
+}
+
+h2 {
+  font-family: monospace;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: rgb(245, 87, 245);
+}
+
+/* About Iframe */
+.about-section iframe {
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+.paragraph{
+    text-indent: 20px;
+}
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: rgb(245, 87, 245);
+  color: rgb(47, 46, 46);
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+tbody tr:hover {
+  background: #5a5a5a;
+}
+
+td, th {
+  padding: 12.8px;
+  border: 1px solid rgb(245, 87, 245);
+}
+
+/* Lists */
+ol, ul {
+  margin: 16px 0;
+  padding-left: 32px;
+}
+
+ul li::marker {
+  color: rgb(245, 87, 245);
+}
+
+ol li {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Contact Form */
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form input, form select, form textarea {
+  padding: 12.8px;
+  background: transparent;
+  border: 2px solid rgb(245, 87, 245);
+  color: white;
+  outline: none;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  outline: 3px solid rgb(245, 87, 245);
+  outline-offset: 4px;
+}
+
+.dropdown {
+  position: relative;
+  color: white;
+  background-color: rgb(47, 46, 46);
+  border: 2px solid rgb(245, 87, 245);
+}
+.form-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+button {
+  padding: 12.8px 19.2px;
+  background: rgb(245, 87, 245);
+  color: var(--bg);
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .header-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .image-flex {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .main-header {
+    padding: 32px 8px;
+    margin-bottom: 24px;
+  }
+
+  section {
+    padding: 16px;
+    margin: 24px 0;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .tagline {
+    width: 100%;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-block img {
+    width: 70px;
+  }
+
+  .separator {
+    height: 80px;
+  }
+
+  h2 {
+    font-size: 17.6px;
+  }
+}
